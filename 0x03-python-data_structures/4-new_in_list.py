@@ -1,20 +1,10 @@
 #!/usr/bin/python3
-def new_in_list(my_list, idx, element):
-	length = len(my_list)
 
-	new_list = my_list[:]
+if __name__ == "__main__":
+    """Print all names defined by hidden_4 module."""
+    import hidden_4
 
-	if 0 <= idx < length:
-	new_list[idx] = element
-
-	return (new_list)
-
-
-
-
-
-
-
-
-
-
+    names = dir(hidden_4)
+    for name in names:
+        if name[:2] != "__":
+            print(name)
