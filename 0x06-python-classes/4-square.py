@@ -1,40 +1,40 @@
 #!/usr/bin/python3
-class Square:
-    """Square Class main"""
+"""square class main"""
 
+
+class Square():
+    """square class"""
     def __init__(self, size=0):
-        """__init__
-        The __init__ method initializes the size value of the square.
-        Attributes:
-            size (:obj:`int`, optional): The size of the square.
-        Raises:
-            TypeError: If `size` type is not `int`.
-            ValueError: If `size` is less than `0`.
-        """
+        """ Instance of class Square
+    Arguments:
+        @size: size of side of square"""
 
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
+        self.__size = size
+        if type(size) != int:
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
 
-        if size < 0:
-            raise ValueError('size must be >= 0')
-
-        self.size = size
+    def area(self):
+        """ area of square
+        Return:
+                area of square."""
+        return self.__size ** 2
 
     @property
     def size(self):
+        """ getter of size
+    Return:
+            value of size"""
         return self.__size
 
     @size.setter
-    def size(self, size):
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-
-        if size < 0:
-            raise ValueError('size must be >= 0')
-
-        self.__size = size
-
-    def area(self):
-        """Returns the current square area
-        """
-        return self.__size ** 2
+    def size(self, value):
+        """ setter of the size
+    Arguments:
+        value: value of size"""
+        self.__size = value
+        if type(value) != int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
