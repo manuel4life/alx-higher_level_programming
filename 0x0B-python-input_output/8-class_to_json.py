@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-"""load_from_json_file
-"""
-import json
+'''Class to Object Module'''
 
 
-def load_from_json_file(filename):
-    """Returns created object from a JSON file
-    """
-
-    with open(filename, mode="r", encoding="UTF-8") as readFile:
-       return json.load(readFile) 
+def class_to_json(obj):
+    '''
+    function that returns the dict
+    description with simple data
+    structure
+    '''
+    return (type(obj))
