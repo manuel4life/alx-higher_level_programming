@@ -11,7 +11,7 @@ and then save them to a file:
     The list must be saved as a JSON representation
     in a file named add_item.json
     If the file doesn’t exist, it should be created
-    You don’t need to manage file permissions / exceptions.
+    You don’t need to manage file permissions / exception.
 '''
 
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
