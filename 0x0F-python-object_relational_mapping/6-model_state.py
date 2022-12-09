@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start the class to table in database"""
+"""Starts all the classes to table in database"""
 import sys
 from model_state import Base, State
 
