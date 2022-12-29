@@ -9,7 +9,9 @@ import sys
 
 
 def get_x_request_id():
-    
+    '''
+    function to get X-request-Id of a given url
+    '''
     url = sys.argv[1]
 
     with urllib.request.urlopen(url) as response:
