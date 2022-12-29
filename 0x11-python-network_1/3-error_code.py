@@ -10,6 +10,9 @@ import sys
 
 
 def request_data(url):
+    '''
+    To deal with error
+    '''
 
     url = url
 
