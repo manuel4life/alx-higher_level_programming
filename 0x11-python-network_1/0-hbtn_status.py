@@ -16,6 +16,6 @@ if __name__ == "__main__":
     # Get the status and print the body of the response
     status = get_status()
     print("Body response:")
-    print("\f- type:", type(status))
-    print("\f- content:", status)
-    print("\f- utf8 content:", status.decode('utf-8'))
+    print("\t- type:", type(status))
+    print("\t- content:", status)
+    print("\t- utf8 content:", status.decode('utf-8'))
