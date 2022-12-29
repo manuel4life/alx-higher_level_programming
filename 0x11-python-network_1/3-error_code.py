@@ -10,8 +10,7 @@ import sys
 
 
 def request_data(url):
-    
-    
+
     url = url
 
     req = urllib.request.Request(url)
